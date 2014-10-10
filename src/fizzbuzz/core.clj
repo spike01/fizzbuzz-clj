@@ -13,6 +13,7 @@
   (= 0 (mod number divisor)))
 
 (defn fizz-buzz [number]
-  (if (is-divisible-by? number 15) (str "Fizzbuzz")
-    (if (is-divisible-by? number 3) (str "Fizz")
-      (if (is-divisible-by? number 5) (str "Buzz")))))
+  (if (is-divisible-by? number 15) "Fizzbuzz"
+    (if (is-divisible-by? number 3) "Fizz"
+      (if (is-divisible-by? number 5) "Buzz"
+         number))))

@@ -29,7 +29,7 @@
 (deftest is-divisible-by-seven
   (testing "7 divisible by 7"
     (is (= true (is-divisible-by? 7 7)))))
-ughjghjgggyhhg
+
 (deftest is-not-divisible-by-seven
   (testing "1 divisible by 7"
     (is (= false (is-divisible-by? 1 7)))))
@@ -46,3 +46,6 @@ ughjghjgggyhhg
   (testing "Fizzbuzz on 15"
     (is (= "Fizzbuzz" (fizz-buzz 15)))))
 
+(deftest number-on-number
+  (testing "Number on 7"
+    (is (= 7 (fizz-buzz 7)))))
